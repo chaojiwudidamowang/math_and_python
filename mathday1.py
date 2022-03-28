@@ -18,3 +18,12 @@ print(sympy.limit(f,x,0))
 from sympy import *
 from sympy.abc import x,y,z,f
 print(diff(asin(sqrt(sympy.sin(x)))))
+
+#求f(x,y)=x^2+3xy+y^2在(1,2)处的偏导数
+f=x**2+3*x*y+y**2
+diff(f,x)
+diff(f,y)
+fx=diff(f,x)
+print(fx.evalf(subs={x:1,y:2}))
+fy=diff(f,y)
+print(fy.evalf(subs={x:1,y:2}))
