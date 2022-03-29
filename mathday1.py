@@ -17,10 +17,12 @@ print(sympy.limit(f,x,0))
 #求y=arcsin根号下sinx的导数
 from sympy import *
 from sympy.abc import x,y,z,f
+#diff表示对函数求导
 print(diff(asin(sqrt(sympy.sin(x)))))
 
 #求f(x,y)=x^2+3xy+y^2在(1,2)处的偏导数
 f=x**2+3*x*y+y**2
+#表示求f对于x的偏导数
 diff(f,x)
 diff(f,y)
 fx=diff(f,x)
