@@ -47,7 +47,7 @@ def PyFun(x, y):
 
 
 fig = plt.figure()
-ax = Axes3D(fig, auto_add_to_figure=False)
+ax = Axes3D(fig,auto_add_to_figure=False)
 fig.add_axes(ax)
 X, Y = np.mgrid[-2:2:40j, -2:2:40j]
 Z = Fun(X, Y)
